@@ -1,0 +1,107 @@
+@import "../../assets/style/vars";
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $blue;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__photo {
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 7px 3px 20px rgba(229, 229, 229, 0.8980392157);
+  }
+
+  &__content {
+    padding-left: 30px;
+    max-width: 615px;
+    min-height: 100%;
+
+    &-title {
+      @extend .header1;
+      color: $white;
+    }
+
+    &-paragraph {
+      @extend .body;
+      color: $white;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-top: 15px;
+
+      &_item {
+        padding-bottom: 3px;
+        @extend .header1;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 15px;
+        border-bottom: 2px solid;
+        color: $white;
+        transition: 0.5s;
+
+        &:hover {
+          color: $yellow;
+        }
+
+        &.about__content-list_item--active {
+          color: $yellow;
+        }
+      }
+    }
+
+    &-skils_list,
+    &-education_list {
+      display: none;
+
+      &.about__content-list--active {
+        display: flex;
+      }
+    }
+
+    &-skils_list {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &__subtitle {
+          color: $yellow;
+        }
+
+        &__paragraph {
+          @extend .body;
+          color: $white;
+        }
+      }
+    }
+
+    &-education_list {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &__link {
+          text-decoration: none;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+	background-color: $white;
+}
+
+*{
+	font-family: "Montserrat";
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.container{
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__section{
+	max-width: 1115px;
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+
+
+
+

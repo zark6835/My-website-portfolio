@@ -1,0 +1,37 @@
+@import "../../../assets/style/_vars.scss";
+
+.header {
+  width: 100%;
+  background-color: $blue;
+  padding: 30px 0;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    @extend .header1;
+    color: $white;
+    &:first-letter {
+      color: $yellow;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 35px;
+
+    &-item {
+      cursor: pointer;
+      @extend .body2;
+      color: $white;
+      transition: 0.5s;
+
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+}
