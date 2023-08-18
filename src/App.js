@@ -1,7 +1,9 @@
 import React from "react";
+
 import Header from "./components/layouts/Header/Header";
 import Hello from "./components/Hello/Hello.jsx";
 import AboutMe from "./components/AboutMe/About.jsx";
+import Project from "./components/Project/Project";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
           <main className="main">
             <Hello />
             <AboutMe />
+            <Project/>
           </main>
         </div>
       </React.StrictMode>

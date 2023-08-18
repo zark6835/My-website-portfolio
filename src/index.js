@@ -4,9 +4,11 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { BrowserRouter } from "react-router-dom";
 
+import './assets/style/style.scss'
+
 import App from "./App";
 import reducer from "./services/store/reducers.js";
-import './assets/style/style.scss'
+
 
 const store = createStore(reducer);
 

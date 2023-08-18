@@ -36,7 +36,7 @@ const About = () => {
                 Html, Scss
               </p>
               <ul className="about__content-skils_list_item__paragraph">
-                <li>Flex, Grid, Responsive layout, Semantic tags, BEM.</li>
+                <li>Flex, Grid, Responsive layout, Semantic Tags, BEM.</li>
               </ul>
             </li>
             <li className="about__content-skils_list_item">
@@ -55,7 +55,7 @@ const About = () => {
               </p>
               <ul>
                 <li className="about__content-skils_list_item__paragraph">
-                  JSX, React Hooks, Routing, Context, Formik.
+                  JSX, React Hooks, Routing, Context, Formik, React Slick.
                 </li>
               </ul>
             </li>
@@ -75,7 +75,7 @@ const About = () => {
                 className="about__content-education_list_item__link"
                 href="https://foxminded.ua/front-end-1/"
               >
-                Foxminded: Mentoring Curse - Front End Developer course: React
+                May 2023 - Foxminded: Mentoring Curse - Front End Developer course
               </a>
             </li>
           </ul>
