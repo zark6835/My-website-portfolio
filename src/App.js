@@ -4,6 +4,7 @@ import Header from "./components/layouts/Header/Header";
 import Hello from "./components/Hello/Hello.jsx";
 import AboutMe from "./components/AboutMe/About.jsx";
 import Project from "./components/Project/Project";
+import Contacts from "./components/Contacts/Contacts.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Hello />
             <AboutMe />
             <Project/>
+            <Contacts/>
           </main>
         </div>
       </React.StrictMode>

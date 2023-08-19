@@ -1,0 +1,153 @@
+@import "../../assets/style/vars";
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $blue;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__infotmation {
+    &-title {
+      @extend .header1;
+      text-align: center;
+    }
+
+    &-list {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      &_item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &__img {
+        }
+
+        &__text {
+          @extend .body2;
+          font-size: 16px;
+          text-decoration: none;
+          color: $white;
+        }
+
+        &__button {
+          cursor: pointer;
+          width: 100%;
+          padding: 10px 50px;
+          background-color: $yellow;
+          color: $white;
+          font-size: 16px;
+          text-transform: uppercase;
+          overflow: hidden;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    z-index: 0;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -70px;
+        left: -190px;
+        background-image: url(../../assets/img/content/contacts/form-bg2.png);
+       display: block;
+        width: 190px;
+        height: 199px;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -70px;
+        right: -190px;
+        background-image: url(../../assets/img/content/contacts/form-bg1.png);
+       display: block;
+        width: 190px;
+        height: 199px;
+    }
+
+    &-box {
+      position: relative;
+      &_input {
+        width: 100%;
+        padding: 10px 0 10px 5px;
+        font-weight: 600;
+        font-size: 16px;
+        color: $blue;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid $blue;
+        outline: none;
+        background: transparent;
+      }
+
+      &_label {
+        padding: 10px 0;
+        font-size: 16px;
+        color: $blue;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      &_message {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        &__input {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 8px;
+          resize: none;
+          color: $blue;
+
+          height: 96px;
+          border: 1px solid $blue;
+          background-color: transparent;
+          font-family: inherit;
+        }
+      }
+    }
+
+    &-button {
+      cursor: pointer;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: $yellow;
+      font-size: 16px;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.5s;
+      margin-top: 40px;
+      letter-spacing: 4px;
+      border-radius: 5px;
+
+      &:hover {
+        background: $yellow;
+        box-shadow: 0 0 5px $yellow, 0 0 25px $yellow, 0 0 50px $yellow,
+          0 0 100px $yellow;
+      }
+    }
+  }
+}
