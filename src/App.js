@@ -6,7 +6,7 @@ import AboutMe from "./components/AboutMe/About.jsx";
 import Project from "./components/Project/Project";
 import Contacts from "./components/Contacts/Contacts.jsx";
 
-function App() {
+function App() {  
   return (
     <div className="Add">
       <React.StrictMode>

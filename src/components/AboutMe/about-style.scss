@@ -23,7 +23,7 @@
   &__content {
     padding-left: 30px;
     max-width: 615px;
-    min-height: 100%;
+    min-height: 540px;
 
     &-title {
       @extend .header1;
@@ -55,14 +55,13 @@
           color: $yellow;
         }
 
-        &.about__content-list_item--active {
+        &.about__content-list--active {
           color: $yellow;
         }
       }
     }
 
-    &-skils_list,
-    &-education_list {
+    &-about_list {
       display: none;
 
       &.about__content-list--active {
@@ -70,7 +69,7 @@
       }
     }
 
-    &-skils_list {
+    &-about_list {
       flex-direction: column;
       gap: 15px;
       margin-top: 20px;
@@ -86,17 +85,6 @@
           @extend .body;
           color: $white;
         }
-      }
-    }
-
-    &-education_list {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-      &_item {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
         &__link {
           text-decoration: none;
           color: $yellow;
