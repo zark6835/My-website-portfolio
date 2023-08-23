@@ -1,11 +1,12 @@
+import { forwardRef } from "react";
 import projectData from "../../data/project-data";
 
 import "./project-style.scss";
 
 
-const Project = () => {
+const Project = (props) => {
   return (
-    <section className="project">
+    <section className="project" ref={props.projectRef}>
       <h2 className="project__title">Project</h2>
       <ul className="project__list container">
         {projectData.map((item) => (
@@ -42,4 +43,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default forwardRef(Project);

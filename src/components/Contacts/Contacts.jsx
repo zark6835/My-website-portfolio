@@ -11,10 +11,11 @@ import gitlab from "../../assets/img/content/contacts/gitlab.svg";
 import terminal from "../../assets/img/content/contacts/terminal.svg";
 
 import sv from "../../assets/PDF/sv.pdf"
+import { forwardRef } from "react";
 
-const Contacts = () => {
+const Contacts = (props) => {
   return (
-    <aside className="contacts">
+    <aside className="contacts" ref={props.contactsRef}>
       <div className="contacts__wrapper container__section">
         <div className="contacts__infotmation">
           <h2 className="contacts__infotmation-title">Contact me</h2>
@@ -120,4 +121,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default forwardRef(Contacts);
