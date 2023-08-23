@@ -89,6 +89,29 @@
 
     &-box {
       position: relative;
+      
+      &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &_label {
+        padding: 10px 0;
+        font-size: 16px;
+        color: $blue;
+        pointer-events: none;
+        transition: 0.5s;
+
+        &.contacts__form-box_label--error{
+          color: red;
+        }
+      }
+
+      &_error{
+        color: red;
+      }
+      
       &_input {
         width: 100%;
         padding: 10px 0 10px 5px;
@@ -100,14 +123,11 @@
         border-bottom: 1px solid $blue;
         outline: none;
         background: transparent;
-      }
 
-      &_label {
-        padding: 10px 0;
-        font-size: 16px;
-        color: $blue;
-        pointer-events: none;
-        transition: 0.5s;
+        &.contacts__form-box_input--error{
+          border-bottom: 1px solid red;
+          color: red;
+        }
       }
 
       &_message {
@@ -126,6 +146,10 @@
           border: 1px solid $blue;
           background-color: transparent;
           font-family: inherit;
+
+          &.contacts__form-box_message__input--error{
+            border: 1px solid red;
+          }
         }
       }
     }

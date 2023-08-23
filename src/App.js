@@ -1,22 +1,16 @@
 import React from "react";
 
 import Header from "./components/layouts/Header/Header";
-import Hello from "./components/Hello/Hello.jsx";
-import AboutMe from "./components/AboutMe/About.jsx";
-import Project from "./components/Project/Project";
-import Contacts from "./components/Contacts/Contacts.jsx";
+import IndexPage from "./pages/IndexPage";
 
-function App() {  
+function App() {
   return (
     <div className="Add">
       <React.StrictMode>
         <div className="wrapper">
           <Header />
           <main className="main">
-            <Hello />
-            <AboutMe />
-            <Project/>
-            <Contacts/>
+            <IndexPage />
           </main>
         </div>
       </React.StrictMode>

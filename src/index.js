@@ -9,7 +9,6 @@ import './assets/style/style.scss'
 import App from "./App";
 import reducer from "./services/store/reducers.js";
 
-
 const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

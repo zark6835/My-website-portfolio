@@ -95,7 +95,7 @@ const About = () => {
             <li className="about__content-about_list_item">
               <a
                 className="about__content-about_list_item__link"
-                href="https://foxminded.ua/front-end-1/"
+                href="https://drive.google.com/drive/u/2/folders/15ab4HMTwgLLlh0rIjoWj8n8QXOqowWSR"
               >
                 May 2023 - Foxminded: Mentoring Curse - Front End Developer
                 course
