@@ -10,6 +10,8 @@ import github from "../../assets/img/content/contacts/github.svg";
 import gitlab from "../../assets/img/content/contacts/gitlab.svg";
 import terminal from "../../assets/img/content/contacts/terminal.svg";
 
+import sv from "../../assets/PDF/sv.pdf"
+
 const Contacts = () => {
   return (
     <aside className="contacts">
@@ -106,9 +108,9 @@ const Contacts = () => {
               </a>
             </li>
             <li className="contacts__infotmation-list_item">
-              <button className="contacts__infotmation-list_item__button">
+              <a href={sv} download='sv-Myroslav' className="contacts__infotmation-list_item__button">
                 Download SV
-              </button>
+              </a>
             </li>
           </ul>
         </div>

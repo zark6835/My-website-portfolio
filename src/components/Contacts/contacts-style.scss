@@ -41,12 +41,13 @@
         }
 
         &__button {
-          cursor: pointer;
           width: 100%;
           padding: 10px 50px;
           background-color: $yellow;
           color: $white;
           font-size: 16px;
+          text-decoration: none;
+          text-align: center;
           text-transform: uppercase;
           overflow: hidden;
           border-radius: 5px;
