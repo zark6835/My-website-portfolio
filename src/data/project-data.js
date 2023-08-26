@@ -8,22 +8,22 @@ const projectData = [
     id: 1,
     img: img1,
     name: "COUNTRY LIST PAGE",
-    link: "",
+    link: "https://country-list-two.vercel.app/",
     about:
       "A project in which the user can learn about different countries of the world, namely, on which continent this country is located, what is its population and the capital of this country",
     technologies: "HTML, Sass, JavaScript, Gulp, Git, Rest Api",
-    linkRepository: "",
+    linkRepository: "https://github.com/zark6835/Country-list",
   },
   {
     id: 2,
     img: img2,
     name: "ONLINE FURNITURE STORE",
-    link: "",
+    link: "https://online-furniture-store-xi.vercel.app/index.html",
     about:
       "A project where the user can buy and conveniently sort various pieces of furniture",
     technologies:
       "HTML, Sass, JavaScript, Gulp, Git, JSON, Rest Api, Localstorage",
-    linkRepository: "",
+    linkRepository: "https://github.com/zark6835/Online-furniture-store",
   },
   {
     id: 3,
@@ -40,12 +40,12 @@ const projectData = [
     id: 4,
     img: img4,
     name: "Weather app",
-    link: "",
+    link: "https://weather-app-tau-two-52.vercel.app/",
     about:
       "A project in which the user can find out about the weather for the next 5 days in his place or anywhere in the world",
     technologies:
       "HTML, Sass, JavaScript, Gulp, Git, JSON, Rest Api, Mobile first",
-    linkRepository: "",
+    linkRepository: "https://github.com/zark6835/Weather-app",
   },
 ];
 
