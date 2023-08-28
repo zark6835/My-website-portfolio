@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import projectData from "../../data/project-data";
 
 import "./project-style.scss";
@@ -43,4 +42,4 @@ const Project = (props) => {
   );
 };
 
-export default forwardRef(Project);
+export default Project;

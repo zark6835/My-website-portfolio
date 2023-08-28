@@ -1,7 +1,6 @@
 import './hello-style.scss'
 
 import img from "../../assets/img/content/hello/hello-img.png"
-import { forwardRef } from 'react';
 
 const Hello = (props) => {
     return ( 
@@ -14,4 +13,4 @@ const Hello = (props) => {
      );
 }
  
-export default forwardRef(Hello);
+export default Hello;

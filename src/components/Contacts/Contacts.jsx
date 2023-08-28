@@ -11,7 +11,6 @@ import gitlab from "../../assets/img/content/contacts/gitlab.svg";
 import terminal from "../../assets/img/content/contacts/terminal.svg";
 
 import sv from "../../assets/PDF/sv.pdf"
-import { forwardRef } from "react";
 
 const Contacts = (props) => {
   return (
@@ -121,4 +120,4 @@ const Contacts = (props) => {
   );
 };
 
-export default forwardRef(Contacts);
+export default Contacts;

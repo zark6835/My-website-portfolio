@@ -3,7 +3,6 @@ import useAboutState from "../../hooks/useAboutState ";
 import "./about-style.scss";
 
 import photo from "../../assets/img/About-me-photo.jpg";
-import { forwardRef } from "react";
 
 const About = (props) => {
   const { skils, education, educationState } = useAboutState();
@@ -109,4 +108,4 @@ const About = (props) => {
   );
 };
 
-export default forwardRef(About);
+export default About;
